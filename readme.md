@@ -1,4 +1,8 @@
-﻿# 《群星》种族立绘Mod生成器
+﻿# 碧蓝航线种族Mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=3015774237
+
+如果作者偷懒不更新Mod，你可以自行改动之后，在Pull Request附上添加的立绘。
+# 《群星》种族立绘Mod生成器
 ## 生成Mod的功能
 * 利用种族特质点来选择领袖和Pop的立绘组
 * 根据立绘自动更名
