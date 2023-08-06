@@ -1,0 +1,269 @@
+namespace = rename_[[Namespace]]
+
+#reset portrait
+leader_event = {
+	id = rename_[[Namespace]].100
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = stop_name_traits }
+		}
+		is_ruler = no
+	}
+	
+	immediate = {
+		if = {
+			limit = { 
+				is_ruler = no
+			}
+			leader_event = {id = rename_[[Namespace]].110}
+		}
+	}
+}
+
+#reset leader
+leader_event = {
+	id = rename_[[Namespace]].101
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		owner = {
+			NOT = { has_country_flag = stop_name_traits }
+		}
+		is_ruler = no
+	}
+	
+	immediate = {
+		leader_event = {id = rename_[[Namespace]].110}
+		leader_event = {id = rename_[[Namespace]].111}
+	}
+}
+
+#reroll character name tag if needed and set portrait accordingly
+leader_event = {
+	id = rename_[[Namespace]].110
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_leader_flag = leader_skip_rename}
+		owner = {
+			NOT = { has_country_flag = stop_name_traits }
+		}
+	}
+	
+	immediate = {
+		log = "rename_[[Namespace]].110"
+		#reroll name tag if needed
+		[[Block1]]
+		#set portrait
+		[[Block3]]
+	}
+}
+
+#clone leader with correct name and kill old leader
+leader_event = {
+	id = rename_[[Namespace]].111
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		has_leader_flag = leader_need_rename
+		owner = {
+			NOT = { has_country_flag = stop_name_traits }
+			NOT = { has_country_flag = election_under_way }
+		}
+		NOT = { has_leader_flag = temp_election_leader }
+		is_ruler = no
+		is_pool_leader = no
+	}
+	
+	immediate = {
+		owner = {
+			set_country_flag = stop_name_traits
+		}
+		log = "rename_[[Namespace]].111"
+		if = { 
+			[[Block2]]
+			if = {
+				limit = { 
+					NOT = { has_leader_flag = leader_need_rename }
+					NOT = { has_leader_flag = leader_is_heir }
+				}
+				set_leader_flag = leader_pending_kill
+				leader_event = { id = rename_[[Namespace]].112 }
+				kill_leader = { 
+					show_notification = no
+					fire = yes
+				}
+			}
+			remove_leader_flag = leader_need_rename
+		}
+		owner = {
+			remove_country_flag = stop_name_traits
+		}
+	}
+}
+
+#assign clone leader
+leader_event = {
+	id = rename_[[Namespace]].112
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_leader_flag = leader_pending_kill
+	}
+
+	immediate = {
+		log = "rename_[[Namespace]].112"
+		if = { 
+			limit = { exists = fleet }
+			fleet = { 
+				assign_leader = last_created_leader
+			}
+		}
+		if = { 
+			limit = { exists = planet }
+			planet = { 
+				assign_leader = last_created_leader
+			}
+		}
+	}
+}
+
+#rename right after game started
+country_event = {
+	id = rename_[[Namespace]].200
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		days_passed < 2
+		NOT = { has_country_flag = stop_name_traits }
+		from = { 
+			is_ruler = no
+			is_heir = no
+		}
+	}
+	
+	immediate = {
+		log = "rename_[[Namespace]].200"
+		log = "Owner = [Owner.GetName]"
+		from = {
+			leader_event = {id = rename_[[Namespace]].110}
+		}
+		every_pool_leader = { set_leader_flag = is_pooled_leader }
+		every_owned_leader = {
+			remove_leader_flag = is_pooled_leader
+			leader_event = {id = rename_[[Namespace]].111}
+		}
+		every_envoy = {
+			remove_leader_flag = is_pooled_leader
+			leader_event = {id = rename_[[Namespace]].111}
+		}
+	}
+}
+
+#change newly spawned leader portrait
+country_event = {
+	id = rename_[[Namespace]].201
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { has_country_flag = stop_name_traits }
+		from = { 
+			is_ruler = no
+			is_heir = no
+		}
+	}
+	
+	immediate = {
+		log = "rename_[[Namespace]].201"
+		from = {
+			leader_event = {id = rename_[[Namespace]].110}
+			leader_event = {id = rename_[[Namespace]].111}
+		}
+	}
+}
+
+#heir rename
+country_event = {
+	id = rename_[[Namespace]].202
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		from = { is_heir = yes }
+	}
+	
+	immediate = {
+		log = "rename_[[Namespace]].202"
+		from = {
+			leader_event = {id = rename_[[Namespace]].110}
+			set_leader_flag = leader_is_heir
+			if = {
+				limit = { has_leader_flag = leader_need_rename }
+				leader_event = {id = rename_[[Namespace]].111}
+				set_leader_flag = leader_is_old_heir
+				last_created_leader = 
+				{
+					leader_event = {
+						id = rename_[[Namespace]].2021
+						days = 1
+					}
+				}
+			}
+		}
+	}
+}
+
+leader_event = {
+	id = rename_[[Namespace]].2021
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+	}
+
+	immediate = {
+		log = "rename_[[Namespace]].2021"
+		save_event_target_as = new_heir
+		FROM = {
+			set_heir = event_target:new_heir
+			every_owned_leader = {
+				if = {
+					limit = { 
+						has_leader_flag = leader_is_old_heir
+					}
+					kill_leader = { 
+						show_notification = no
+						fire = yes
+					}
+				}
+			}
+		}
+	}
+}
+
+#mark initial leader
+country_event = {
+	id = rename_[[Namespace]].203
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		NOT = { days_passed > 1 }	#ruler that spawned before day 1 is initial leader
+		from = { is_ruler = yes }
+	}
+	immediate = {
+		log = "rename_[[Namespace]].203"
+		from = {
+			set_leader_flag = leader_skip_rename
+		}
+	}
+}

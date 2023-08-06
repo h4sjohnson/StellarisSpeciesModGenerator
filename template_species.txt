@@ -1,0 +1,30 @@
+[[Namespace]]_species = {
+	archetype = BIOLOGICAL
+#	randomized = no
+	gender = female
+
+	portrait_modding = yes
+
+	leader_age_min = 15
+	leader_age_max = 25
+
+	portraits = {
+		"[[Namespace]]_portraits"
+	}
+	non_randomized_portraits = {
+		"[[Namespace]]_portraits"
+	}
+
+	possible = {
+		authority = {
+			NOT = {
+				value = auth_machine_intelligence
+				text = SPECIES_CLASS_MUST_NOT_USE_MACHINE_INTELLIGENCE
+			}
+		}
+	}
+
+	graphical_culture = humanoid_01
+	move_pop_sound_effect = "moving_pop_confirmation"
+
+}

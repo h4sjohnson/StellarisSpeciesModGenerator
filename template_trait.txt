@@ -1,0 +1,13 @@
+
+[[trait_name]] = {
+	cost = 0
+	ai_weight = {
+		weight = 0
+	}
+	randomized = no
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
+	potential_crossbreeding_chance = 0
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
+	icon = "gfx/interface/icons/traits/[[trait_name]].dds"
+}
