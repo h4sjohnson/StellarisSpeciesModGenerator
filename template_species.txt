@@ -5,8 +5,8 @@
 
 	portrait_modding = yes
 
-	leader_age_min = 15
-	leader_age_max = 25
+	leader_age_min = 18
+	leader_age_max = 30
 
 	portraits = {
 		"[[Namespace]]_portraits"

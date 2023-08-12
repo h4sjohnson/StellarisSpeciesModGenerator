@@ -1,3 +1,97 @@
 ﻿命名空间,,默认立绘,,,
-,,,,,
+nikke,,JLJT18,,妮姬,Nikke
 特质名称,领袖ID,立绘名称,立绘路径,simp_chinese,english
+trait_pilgrims_portraits,,,,朝圣者立绘,Pilgrims portraits
+,PIL_001,CSZ01,gfx/models/portraits/CSZ/CSZ01.dds,伊莎贝尔,Isabel
+,PIL_002,CSZ02,gfx/models/portraits/CSZ/CSZ02.dds,白雪公主,Snow White
+,PIL_003,CSZ03,gfx/models/portraits/CSZ/CSZ03.dds,桃乐丝,Dorothy
+,PIL_004,CSZ04,gfx/models/portraits/CSZ/CSZ04.dds,尼希利斯塔,Nihilister
+,PIL_005,CSZ05,gfx/models/portraits/CSZ/CSZ05.dds,诺雅,Noah
+,PIL_006,CSZ06,gfx/models/portraits/CSZ/CSZ06.dds,哈兰,Harran
+,PIL_007,CSZ07,gfx/models/portraits/CSZ/CSZ07.dds,神罚,Modernia
+,PIL_008,CSZ08,gfx/models/portraits/CSZ/CSZ08.dds,长发公主,Rapunzel
+,PIL_009,CSZ09,gfx/models/portraits/CSZ/CSZ09.dds,红莲,Scarlet
+trait_elysion_portraits,,,,极乐净土立绘,Elysion portraits
+,ELY_001,JLJT01,gfx/models/portraits/JLJT/JLJT01.dds,D,D
+,ELY_002,JLJT02,gfx/models/portraits/JLJT/JLJT02.dds,银华,Eunhwa
+,ELY_003,JLJT03,gfx/models/portraits/JLJT/JLJT03.dds,艾玛,Emma
+,ELY_004,JLJT04,gfx/models/portraits/JLJT/JLJT04.dds,吉萝婷,Guillotine
+,ELY_005,JLJT05,gfx/models/portraits/JLJT/JLJT05.dds,西格娜,Signal
+,ELY_006,JLJT06,gfx/models/portraits/JLJT/JLJT06.dds,索林,Soline
+,ELY_007,JLJT07,gfx/models/portraits/JLJT/JLJT07.dds,迪赛尔,Diesel
+,ELY_008,JLJT08,gfx/models/portraits/JLJT/JLJT08.dds,德尔塔,Delta
+,ELY_009,JLJT09,gfx/models/portraits/JLJT/JLJT09.dds,尼恩,Neon
+,ELY_010,JLJT10,gfx/models/portraits/JLJT/JLJT10.dds,布丽德,Brid
+,ELY_011,JLJT11,gfx/models/portraits/JLJT/JLJT11.dds,普丽瓦蒂,Privaty
+,ELY_012,JLJT12,gfx/models/portraits/JLJT/JLJT12.dds,贝斯蒂,Vesti
+,ELY_013,JLJT13,gfx/models/portraits/JLJT/JLJT13.dds,海伦,Helm
+,ELY_014,JLJT14,gfx/models/portraits/JLJT/JLJT14.dds,波莉,Poli
+,ELY_015,JLJT15,gfx/models/portraits/JLJT/JLJT15.dds,米兰达,Miranda
+,ELY_016,JLJT16,gfx/models/portraits/JLJT/JLJT16.dds,梅登,Maiden
+,ELY_017,JLJT17,gfx/models/portraits/JLJT/JLJT17.dds,谢芙蒂,Shifty
+,ELY_018,JLJT18,gfx/models/portraits/JLJT/JLJT18.dds,拉毗,Rapi
+,ELY_019,JLJT19,gfx/models/portraits/JLJT/JLJT19.dds,尼恩：蓝色海洋,Neon: Blue Ocean
+,ELY_020,JLJT20,gfx/models/portraits/JLJT/JLJT20.dds,拉毗：经典假期,Rapi: Classic Vacation
+,ELY_021,JLJT21,gfx/models/portraits/JLJT/JLJT21.dds,马斯特,Mast
+,ELY_022,JLJT22,gfx/models/portraits/JLJT/JLJT22.dds,马斯特：海盗之心,Mast:A Pirate's Heart 
+,ELY_023,JLJT23,gfx/models/portraits/JLJT/JLJT23.dds,安克,Anchor
+,ELY_024,JLJT24,gfx/models/portraits/JLJT/JLJT24.dds,海伦：海蓝宝石,Helm: Aquamari
+trait_missilis_portraits,,,,米西利斯立绘,Missilis portraits
+,MIS_001,MXLS01,gfx/models/portraits/MXLS/MXLS01.dds,N102,N102
+,MIS_002,MXLS02,gfx/models/portraits/MXLS/MXLS02.dds,艾德米,Admi
+,MIS_003,MXLS03,gfx/models/portraits/MXLS/MXLS03.dds,艾瑟儿,Ether
+,MIS_004,MXLS04,gfx/models/portraits/MXLS/MXLS04.dds,安妮：奇迹仙女,Anne: Mirac
+,MIS_005,MXLS05,gfx/models/portraits/MXLS/MXLS05.dds,艾菲涅尔,Epinel
+,MIS_006,MXLS06,gfx/models/portraits/MXLS/MXLS06.dds,吉尔提,Guilty
+,MIS_007,MXLS07,gfx/models/portraits/MXLS/MXLS07.dds,坎西,Quency
+,MIS_008,MXLS08,gfx/models/portraits/MXLS/MXLS08.dds,克拉乌,Crow
+,MIS_009,MXLS09,gfx/models/portraits/MXLS/MXLS09.dds,豺狼,Jackal
+,MIS_010,MXLS10,gfx/models/portraits/MXLS/MXLS10.dds,尤莉亚,Julia
+,MIS_011,MXLS11,gfx/models/portraits/MXLS/MXLS11.dds,森,Sin
+,MIS_012,MXLS12,gfx/models/portraits/MXLS/MXLS12.dds,桑迪,Centi
+,MIS_013,MXLS13,gfx/models/portraits/MXLS/MXLS13.dds,德雷克,Drake
+,MIS_014,MXLS14,gfx/models/portraits/MXLS/MXLS14.dds,佩珀,Pepper
+,MIS_015,MXLS15,gfx/models/portraits/MXLS/MXLS15.dds,麦斯威尔,Maxwell
+,MIS_016,MXLS16,gfx/models/portraits/MXLS/MXLS16.dds,米哈拉,Mihara
+,MIS_017,MXLS17,gfx/models/portraits/MXLS/MXLS17.dds,尤妮,Yuni
+,MIS_018,MXLS18,gfx/models/portraits/MXLS/MXLS18.dds,拉普拉斯,Laplace
+,MIS_019,MXLS19,gfx/models/portraits/MXLS/MXLS19.dds,丽塔,Liter
+,MIS_020,MXLS20,gfx/models/portraits/MXLS/MXLS20.dds,丽塔：菲什加德,Liter: Fishguard
+,MIS_021,MXLS21,gfx/models/portraits/MXLS/MXLS21.dds,佩珀：海洋维他命,Pepper: Ocean Vitamin
+,MIS_022,MXLS22,gfx/models/portraits/MXLS/MXLS22.dds,德雷克：反派赛车手 ,Drake: Villain Racer
+trait_tetra_protraits,,,,泰特拉立绘,Tetra Line portraits
+,TTL_001,TTL01,gfx/models/portraits/TTL/TTL01.dds,阿妮斯,Anis
+,TTL_002,TTL02,gfx/models/portraits/TTL/TTL02.dds,阿莉亚,Aria
+,TTL_003,TTL03,gfx/models/portraits/TTL/TTL03.dds,爱丽丝,Alice
+,TTL_004,TTL04,gfx/models/portraits/TTL/TTL04.dds,艾可希雅,Exia
+,TTL_005,TTL05,gfx/models/portraits/TTL/TTL05.dds,可可,Cocoa
+,TTL_006,TTL06,gfx/models/portraits/TTL/TTL06.dds,樱花,Sakura
+,TTL_007,TTL07,gfx/models/portraits/TTL/TTL07.dds,舒格,Sugar
+,TTL_008,TTL08,gfx/models/portraits/TTL/TTL08.dds,索达,Soda
+,TTL_009,TTL09,gfx/models/portraits/TTL/TTL09.dds,朵拉,Dolla
+,TTL_010,TTL10,gfx/models/portraits/TTL/TTL10.dds,尼夫,Neve
+,TTL_011,TTL11,gfx/models/portraits/TTL/TTL11.dds,诺薇尔,Novel
+,TTL_012,TTL12,gfx/models/portraits/TTL/TTL12.dds,毒蛇,Viper
+,TTL_013,TTL13,gfx/models/portraits/TTL/TTL13.dds,饼干,Biscuit
+,TTL_014,TTL14,gfx/models/portraits/TTL/TTL14.dds,富克旺,Folkwan
+,TTL_015,TTL15,gfx/models/portraits/TTL/TTL15.dds,普琳玛,Frima
+,TTL_016,TTL16,gfx/models/portraits/TTL/TTL16.dds,贝洛塔,Belorta
+,TTL_017,TTL17,gfx/models/portraits/TTL/TTL17.dds,沃纶姆,Volume
+,TTL_018,TTL18,gfx/models/portraits/TTL/TTL18.dds,米卡,Mica
+,TTL_019,TTL19,gfx/models/portraits/TTL/TTL19.dds,米尔克,Milk
+,TTL_020,TTL20,gfx/models/portraits/TTL/TTL20.dds,梅里,Mary
+,TTL_021,TTL21,gfx/models/portraits/TTL/TTL21.dds,杨,Yan
+,TTL_022,TTL22,gfx/models/portraits/TTL/TTL22.dds,尤尔夏,Yulha
+,TTL_023,TTL23,gfx/models/portraits/TTL/TTL23.dds,鲁德米拉,Ludmilla
+,TTL_024,TTL24,gfx/models/portraits/TTL/TTL24.dds,露菲,Rupee
+,TTL_025,TTL25,gfx/models/portraits/TTL/TTL25.dds,露菲：冬日购物狂,Rupee: Winter Shopper
+,TTL_026,TTL26,gfx/models/portraits/TTL/TTL26.dds,诺伊斯,Noise
+,TTL_027,TTL27,gfx/models/portraits/TTL/TTL27.dds,诺亚尔,Noir
+,TTL_028,TTL28,gfx/models/portraits/TTL/TTL28.dds,布兰儿,Blanc
+,TTL_029,TTL29,gfx/models/portraits/TTL/TTL29.dds,罗珊娜,Rosanna
+,TTL_030,TTL30,gfx/models/portraits/TTL/TTL30.dds,普琳玛：慵懒海滩 ,Frima: Sea of Sloth
+,TTL_031,TTL31,gfx/models/portraits/TTL/TTL31.dds,梅里：海湾女神,Mary: Bay Goddess
+,TTL_032,TTL32,gfx/models/portraits/TTL/TTL32.dds,杨：黎明超市 ,Yan: Sunrise Market
+,TTL_033,TTL33,gfx/models/portraits/TTL/TTL33.dds,尼罗,Nero
+,TTL_034,TTL34,gfx/models/portraits/TTL/TTL34.dds,阿妮斯：闪耀夏日,Anis: Sparkling Summer
+,TTL_035,TTL35,gfx/models/portraits/TTL/TTL35.dds,莱伊,Rei
