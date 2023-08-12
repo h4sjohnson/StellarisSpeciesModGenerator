@@ -5,4 +5,4 @@ obj/
 output/
 painting/
 *.sln
-Go.bat
+/Go.bat
