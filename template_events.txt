@@ -78,7 +78,7 @@ leader_event = {
 		}
 		NOT = { has_leader_flag = temp_election_leader }
 		is_ruler = no
-		is_pool_leader = no
+		NOT = { has_leader_flag = is_pooled_leader }
 	}
 	
 	immediate = {
@@ -135,36 +135,41 @@ leader_event = {
 	}
 }
 
-#rename right after game started
+#set is_pooled_leader flag
 country_event = {
 	id = rename_[[Namespace]].200
 	is_triggered_only = yes
 	hide_window = yes
 	
 	trigger = {
-		days_passed < 2
 		NOT = { has_country_flag = stop_name_traits }
-		from = { 
-			is_ruler = no
-			is_heir = no
-		}
 	}
 	
 	immediate = {
 		log = "rename_[[Namespace]].200"
 		log = "Owner = [Owner.GetName]"
-		from = {
-			leader_event = {id = rename_[[Namespace]].110}
-		}
 		every_pool_leader = { set_leader_flag = is_pooled_leader }
 		every_owned_leader = {
 			remove_leader_flag = is_pooled_leader
-			leader_event = {id = rename_[[Namespace]].111}
 		}
 		every_envoy = {
 			remove_leader_flag = is_pooled_leader
-			leader_event = {id = rename_[[Namespace]].111}
 		}
+	}
+}
+
+#set is_pooled_leader flag
+leader_event = {
+	id = rename_[[Namespace]].2001
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		always = yes
+	}
+	
+	immediate = {
+		Owner = { country_event = {id = rename_[[Namespace]].200} }
 	}
 }
 

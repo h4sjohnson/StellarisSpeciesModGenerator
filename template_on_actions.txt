@@ -1,5 +1,6 @@
 on_leader_spawned = {
 	events = {
+		rename_[[Namespace]].200
 		rename_[[Namespace]].201
 		rename_[[Namespace]].202
 		rename_[[Namespace]].203
@@ -8,6 +9,7 @@ on_leader_spawned = {
 
 on_leader_hired = {
 	events = {
+		rename_[[Namespace]].2001
 		rename_[[Namespace]].111
 	}
 }
