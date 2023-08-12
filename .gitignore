@@ -3,4 +3,6 @@
 bin/
 obj/
 output/
+painting/
 *.sln
+/Go.bat
