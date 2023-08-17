@@ -162,6 +162,10 @@ trait_Iris_portraits,,,,自由鸢尾立绘
 ,IL014,K_Iris014,gfx/models/portraits/Iris_Libre/IL014.dds,马耶·布雷泽
 ,IL015,K_Iris015,gfx/models/portraits/Iris_Libre/IL015.dds,布雷斯特
 ,IL016,K_Iris016,gfx/models/portraits/Iris_Libre/IL016.dds,马赛曲
+,IL017,K_Iris017,gfx/models/portraits/Iris_Libre/IL017.dds,伴尔维
+,IL018,K_Iris018,gfx/models/portraits/Iris_Libre/IL018.dds,吉尚
+,IL019,K_Iris019,gfx/models/portraits/Iris_Libre/IL019.dds,里昂
+,IL020,K_Iris020,gfx/models/portraits/Iris_Libre/IL020.dds,絮弗伦
 trait_ironblood_portraits,,,,铁血阵营立绘
 ,Iron001,K_Iron001,gfx/models/portraits/Iron_Blood/IB001.dds,腓特烈大帝
 ,Iron002,K_Iron002,gfx/models/portraits/Iron_Blood/IB002.dds,俾斯麦
@@ -301,6 +305,8 @@ trait_vichya_portraits,,,,维希教廷立绘
 ,IL012,K_Iris012,gfx/models/portraits/Iris_Libre/IL012.dds,福煦
 ,VD012,K_Vichya012,gfx/models/portraits/Vichya_Dominion/VD012.dds,不屈
 ,VD013,K_Vichya013,gfx/models/portraits/Vichya_Dominion/VD013.dds,弗兰德尔 
+,VD014,K_Vichya014,gfx/models/portraits/Vichya_Dominion/VD014.dds,凯尔圣
+,VD015,K_Vichya015,gfx/models/portraits/Vichya_Dominion/VD015.dds,克莱蒙梭
 trait_royal_portraits,,,,皇家阵容立绘
 ,RN001,K_Royal001,gfx/models/portraits/Royal_Navy/RN001.dds,厌战
 ,RN002,K_Royal002,gfx/models/portraits/Royal_Navy/RN002.dds,伊丽莎白女王
