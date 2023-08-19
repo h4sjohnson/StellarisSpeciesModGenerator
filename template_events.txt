@@ -145,8 +145,7 @@ leader_event = {
 	hide_window = yes
 	
 	trigger = {
-		is_ai = no
-		always = yes
+		owner = { is_ai = no }
 	}
 	
 	immediate = {
@@ -215,7 +214,7 @@ country_event = {
 		log = "rename_[[Namespace]].201"
 		from = {
 			leader_event = {id = rename_[[Namespace]].110}
-			leader_event = {id = rename_[[Namespace]].111}
+			leader_event = {id = rename_[[Namespace]].113}
 		}
 	}
 }
