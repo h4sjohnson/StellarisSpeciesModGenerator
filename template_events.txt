@@ -71,6 +71,7 @@ leader_event = {
 	hide_window = yes
 	
 	trigger = {
+		is_gestalt_node = no
 		owner = { is_ai = no }
 		has_leader_flag = leader_need_rename
 		owner = {
