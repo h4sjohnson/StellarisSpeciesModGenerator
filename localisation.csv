@@ -3,3 +3,9 @@ edict_reset_portrait__Namespace_,[[LocalizedNamespace]]：重置立绘,[[Localiz
 edict_reset_portrait__Namespace__desc,只重置立绘，此操作基本没有副作用。可以用于改变立绘的游戏事件触发后手动重置立绘,Reset the portratits of leaders. No side effect. Mostly use to reset portraits after game event that change portraits during midgame. 
 edict_reset_leader__Namespace_,[[LocalizedNamespace]]：重置领袖（修复名称）,[[LocalizedNamespace]]: Reset leaders(fix name)
 edict_reset_leader__Namespace__desc,重置领袖并修复名称，领袖可能会离开当前职位。,Reset leaders and fix their names. Notice that leaders could unassgin from current positions.
+selector_next_page,下一页,
+selector_previous_page,上一页,
+selector_cancel,取消,
+selector_back,返回,
+selector_title,选择统治者立绘,
+selector_desc,手动选择初始统治者，以免之后生成与初始统治者重复立绘的领袖,

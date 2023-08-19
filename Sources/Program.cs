@@ -18,6 +18,7 @@ namespace SpeciesModGenerator
 			EdictGenerator.Generate();
 			PortraitGroupsGenerator.Generate();
 			SpeciesGenerator.Generate();
+			LocalisationGenerator.Generate();
 		}
 	}
 }

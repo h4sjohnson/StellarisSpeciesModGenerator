@@ -11,7 +11,23 @@
 				var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
 				for (int i = 0; i < traitWorkload.leaderIDs.Count; i++)
 				{
-					lines.Add($"\t{traitWorkload.leaderPortraitTokens[i]}= {{textureFile = \"{traitWorkload.leaderPortraitPaths[i]}\"}}");
+					lines.Add($"\t{traitWorkload.leaderPortraitTokens[i]}= {{");
+					lines.Add($"textureFile = \"{traitWorkload.leaderPortraitPaths[i]}\"");
+					try
+					{
+						var imageFile = new DDSImage(File.ReadAllBytes("painting/" + traitWorkload.leaderPortraitPaths[i]));
+						if (imageFile.HasHeight && imageFile.Height > 340)
+						{
+							int offset = (imageFile.Height - 340) / 2;
+							lines.Add($"custom_close_up_position_offset = {{ x = 0 y = {offset} }}");
+							lines.Add($"custom_mid_close_up_position_offset = {{ x = 0 y = {offset} }}");
+						}
+					}
+					catch (System.Exception)
+					{
+						throw;
+					}
+					lines.Add("}");
 				}
 				lines.Add("");
 				for (int i = 0; i < traitWorkload.popPortraitTokens.Count; i++)

@@ -23,6 +23,8 @@
 			for (int LanguageIdx = 0; LanguageIdx < ModWorkload.languages.Length; LanguageIdx++)
 			{
 				string Language = ModWorkload.languages[LanguageIdx];
+				if (Language == "")
+					continue;
 				List<string> locLines = new()
 				{
 					$"l_{Language}:"

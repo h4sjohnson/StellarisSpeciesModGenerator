@@ -9,7 +9,6 @@ namespace SpeciesModGenerator
 		public static string[] localizedNamespaces;
 		public static int NumLanguages => languages.Length;
 		public static List<TraitWorkload> traitWorkloads;
-		public static EdictWorkload edictWorkload;
 		public static string defaultPortrait;
 		public class TraitWorkload
 		{
@@ -35,17 +34,11 @@ namespace SpeciesModGenerator
 			public string[] traitNameLocTexts;
 		};
 
-		public class EdictWorkload
-		{
-			public List<string> edictNames = new();
-			public List<string>[] edictLocTexts = new List<string>[NumLanguages];
-			public List<string>[] edictDescLocTexts = new List<string>[NumLanguages];
-		}
-
 		public static void ParseModWorkLoad()
 		{
 			List<string[]> leaderSheet = new();
-			using (var reader = new StreamReader(@"leader_portrait_list.csv", System.Text.Encoding.UTF8))
+			using (var fileStream = File.Open(@"leader_portrait_list.csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+			using (var reader = new StreamReader(fileStream, System.Text.Encoding.UTF8))
 			{
 				while (!reader.EndOfStream)
 				{
@@ -89,7 +82,8 @@ namespace SpeciesModGenerator
 			}
 
 			List<string[]> popSheet = new();
-			using (var reader = new StreamReader(@"pop_portrait_list.csv", System.Text.Encoding.UTF8))
+			using (var fileStream = File.Open(@"pop_portrait_list.csv", FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+			using (var reader = new StreamReader(fileStream, System.Text.Encoding.UTF8))
 			{
 				while (!reader.EndOfStream)
 				{
@@ -111,37 +105,6 @@ namespace SpeciesModGenerator
 				{
 					curTraitWorkload.popPortraitTokens.Add(columns[1]);
 					curTraitWorkload.popPortraitPaths.Add(columns[2]);
-				}
-			}
-
-			List<string[]> edictsLocalisationSheet = new();
-			using (var reader = new StreamReader(@"edict_localisation.csv", System.Text.Encoding.UTF8))
-			{
-				while (!reader.EndOfStream)
-				{
-					var line = reader.ReadLine();
-					if (line != null)
-					{
-						line = line.Replace("_Namespace_", modNamespace);
-						edictsLocalisationSheet.Add(line.Split(','));
-					}
-				}
-			}
-			edictWorkload = new();
-			for (int LanguageIdx = 0; LanguageIdx < NumLanguages; LanguageIdx++)
-			{
-				edictWorkload.edictLocTexts[LanguageIdx] = new();
-				edictWorkload.edictDescLocTexts[LanguageIdx] = new();
-			}
-			for (int i = 1; i < edictsLocalisationSheet.Count; i += 2)
-			{
-				edictWorkload.edictNames.Add(edictsLocalisationSheet[i][0]);
-				for (int LanguageIdx = 0; LanguageIdx < NumLanguages; LanguageIdx++)
-				{
-					var edictLocText = edictsLocalisationSheet[i][1 + LanguageIdx].Replace("[[LocalizedNamespace]]", localizedNamespaces[LanguageIdx]);
-					edictWorkload.edictLocTexts[LanguageIdx].Add(edictLocText);
-					var edictDescLocText = edictsLocalisationSheet[i + 1][1 + LanguageIdx].Replace("[[LocalizedNamespace]]", localizedNamespaces[LanguageIdx]);
-					edictWorkload.edictDescLocTexts[LanguageIdx].Add(edictDescLocText);
 				}
 			}
 		}
