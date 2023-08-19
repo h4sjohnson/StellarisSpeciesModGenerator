@@ -19,7 +19,15 @@
 					string strTemp = "";
 					strTemp += spaces + "if = {\n";
 					strTemp += spaces + "	limit = {\n";
-					strTemp += spaces + "		NOT = { has_leader_flag = leader_portrait_changed }\n";
+					strTemp += spaces + "		NOR = {\n";
+					strTemp += spaces + "			has_leader_flag = leader_portrait_changed\n";
+					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
+					{
+						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
+						foreach (var ID in traitWorkload.leaderIDs)
+							strTemp += spaces + $"			has_leader_flag = leader_name_flag_{ID}\n";
+					}
+					strTemp += spaces + "		}\n";
 					strTemp += spaces + "	}\n";
 					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
 					{
@@ -49,8 +57,6 @@
 							strTemp += spaces + "					}\n";
 							strTemp += spaces + "				}\n";
 							strTemp += spaces + "			}\n";
-							strTemp += spaces + "			change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
-							strTemp += spaces + "			log = \"Leader change portrait to " + traitWorkload.leaderNameLocTexts[0][i] + "\"" + "\n";
 							strTemp += spaces + "			set_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + "\n";
 							strTemp += spaces + "			set_leader_flag = leader_portrait_changed\n";
 							strTemp += spaces + "			set_leader_flag = leader_need_rename\n";
@@ -58,10 +64,10 @@
 						}
 					}
 					strTemp += spaces + "	}\n";
-					// strTemp += spaces + "	if = { \n";
-					// strTemp += spaces + "		limit = { NOT = { has_leader_flag = leader_need_rename} }\n";
-					// strTemp += spaces + "		log = \"Reroll character failed. No leader name available\"\n";
-					// strTemp += spaces + "	}\n";
+					strTemp += spaces + "	if = { \n";
+					strTemp += spaces + "		limit = { NOT = { has_leader_flag = leader_portrait_changed} }\n";
+					strTemp += spaces + "		log = \"[This.GetName]: Reroll character failed. No leader name available\"\n";
+					strTemp += spaces + "	}\n";
 					strTemp += spaces + "}\n";
 					lines[l] = strTemp;
 				}
@@ -127,7 +133,7 @@
 							else
 								strTemp += spaces + "	else_if = { \n";
 							strTemp += spaces + "		limit = { has_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + " }\n";
-							strTemp += spaces + "		log = \"Change leader portrait to " + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
+							strTemp += spaces + "		log = \"Change leader [This.GetName] portrait to " + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
 							strTemp += spaces + "		change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
 							strTemp += spaces + "		set_leader_flag = change_portrait_success\n";
 							strTemp += spaces + "	}\n";
