@@ -137,6 +137,20 @@ leader_event = {
 				assign_leader = last_created_leader
 			}
 		}
+		if = { 
+			limit = { is_councilor_type = councilor_research }
+			last_created_leader = {
+				set_council_position = councilor_research
+				log = "Reassign to councilor_research"				
+			}
+		}
+		if = { 
+			limit = { is_councilor_type = councilor_defense }
+			last_created_leader = {
+				set_council_position = councilor_defense
+				log = "Reassign to councilor_defense"				
+			}
+		}
 	}
 }
 
