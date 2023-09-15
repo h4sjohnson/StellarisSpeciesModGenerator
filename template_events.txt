@@ -10,14 +10,10 @@ leader_event = {
 		owner = {
 			NOT = { has_country_flag = stop_name_traits }
 		}
-		is_ruler = no
 	}
 	
 	immediate = {
 		if = {
-			limit = { 
-				is_ruler = no
-			}
 			leader_event = {id = rename_[[Namespace]].110}
 		}
 	}
@@ -49,7 +45,8 @@ leader_event = {
 	hide_window = yes
 	
 	trigger = {
-		NOT = { has_leader_flag = leader_skip_rename}
+		is_gestalt_node = no
+		owner = { is_ai = no }
 		owner = {
 			NOT = { has_country_flag = stop_name_traits }
 		}
