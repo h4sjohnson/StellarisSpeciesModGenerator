@@ -188,7 +188,8 @@
 					{
 						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
 						const int numLeadersEachEvent = 8;
-						for (int k = 0; k < traitWorkload.leaderIDs.Count / numLeadersEachEvent + 1; k++)
+						int kMax = (int)Math.Ceiling(traitWorkload.leaderIDs.Count / (double)numLeadersEachEvent);
+						for (int k = 0; k < kMax; k++)
 						{
 							strTemp += "leader_event = {\n";
 							strTemp += $"	id = rename_{ModWorkload.modNamespace}.{40000 + TraitIdx * 100 + k}\n";
@@ -209,6 +210,15 @@
 								strTemp += "		name = selector_previous_page\n";
 								strTemp += "		hidden_effect = {\n";
 								strTemp += $"			leader_event = {{ id = rename_{ModWorkload.modNamespace}.{40000 + TraitIdx * 100 + k - 1} }}\n";
+								strTemp += "		}\n";
+								strTemp += "	}\n";
+							}
+							else
+							{
+								strTemp += "	option = {\n";
+								strTemp += "		name = selector_previous_page\n";
+								strTemp += "		hidden_effect = {\n";
+								strTemp += $"			leader_event = {{ id = rename_{ModWorkload.modNamespace}.{40000 + TraitIdx * 100 + kMax - 1} }}\n";
 								strTemp += "		}\n";
 								strTemp += "	}\n";
 							}
@@ -234,6 +244,15 @@
 								strTemp += $"			leader_event = {{ id = rename_{ModWorkload.modNamespace}.{40000 + TraitIdx * 100 + k + 1} }}\n";
 								strTemp += "		}\n";
 								strTemp += "	}\n";
+							}
+							else
+							{
+								strTemp += "	option = {\n";
+								strTemp += "		name = selector_next_page\n";
+								strTemp += "		hidden_effect = {\n";
+								strTemp += $"			leader_event = {{ id = rename_{ModWorkload.modNamespace}.{40000 + TraitIdx * 100 + 0} }}\n";
+								strTemp += "		}\n";
+								strTemp += "	}\n";								
 							}
 							strTemp += "}\n";
 						}

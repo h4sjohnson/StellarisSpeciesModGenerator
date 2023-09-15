@@ -10,14 +10,10 @@ leader_event = {
 		owner = {
 			NOT = { has_country_flag = stop_name_traits }
 		}
-		is_ruler = no
 	}
 	
 	immediate = {
 		if = {
-			limit = { 
-				is_ruler = no
-			}
 			leader_event = {id = rename_[[Namespace]].110}
 		}
 	}
@@ -49,7 +45,8 @@ leader_event = {
 	hide_window = yes
 	
 	trigger = {
-		NOT = { has_leader_flag = leader_skip_rename}
+		is_gestalt_node = no
+		owner = { is_ai = no }
 		owner = {
 			NOT = { has_country_flag = stop_name_traits }
 		}
@@ -135,6 +132,20 @@ leader_event = {
 			planet = { 
 				log = "Reassign to planet [This.GetName]"
 				assign_leader = last_created_leader
+			}
+		}
+		if = { 
+			limit = { is_councilor_type = councilor_research }
+			last_created_leader = {
+				set_council_position = councilor_research
+				log = "Reassign to councilor_research"				
+			}
+		}
+		if = { 
+			limit = { is_councilor_type = councilor_defense }
+			last_created_leader = {
+				set_council_position = councilor_defense
+				log = "Reassign to councilor_defense"				
 			}
 		}
 	}
