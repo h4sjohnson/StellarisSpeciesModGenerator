@@ -120,25 +120,18 @@
 					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
 					{
 						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
-						strTemp += spaces + "if = {\n";
-						strTemp += spaces + "	limit = {\n";
-						strTemp += spaces + "		species = {\n";
-						strTemp += spaces + "			has_trait = " + traitWorkload.traitName + "\n";
-						strTemp += spaces + "		}\n";
-						strTemp += spaces + "	}\n";
 						for (int i = 0; i < traitWorkload.leaderIDs.Count; i++)
 						{
 							if (i == 0)
-								strTemp += spaces + "	if = { \n";
+								strTemp += spaces + "if = { \n";
 							else
-								strTemp += spaces + "	else_if = { \n";
-							strTemp += spaces + "		limit = { has_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + " }\n";
-							strTemp += spaces + "		log = \"Change leader [This.GetName] portrait to " + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
-							strTemp += spaces + "		change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
-							strTemp += spaces + "		set_leader_flag = change_portrait_success\n";
-							strTemp += spaces + "	}\n";
+								strTemp += spaces + "else_if = { \n";
+							strTemp += spaces + "	limit = { has_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + " }\n";
+							strTemp += spaces + "	log = \"Change leader [This.GetName] portrait to " + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
+							strTemp += spaces + "	change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
+							strTemp += spaces + "	set_leader_flag = change_portrait_success\n";
+							strTemp += spaces + "}\n";
 						}
-						strTemp += spaces + "}\n";
 					}
 					// strTemp += spaces + "if = {\n";
 					// strTemp += spaces + "	limit = {\n";

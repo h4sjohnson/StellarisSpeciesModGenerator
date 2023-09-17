@@ -1,20 +1,25 @@
 namespace = rename_[[Namespace]]
 
 #reset portrait
-leader_event = {
+country_event = {
 	id = rename_[[Namespace]].100
 	is_triggered_only = yes
 	hide_window = yes
 	
 	trigger = {
-		owner = {
-			NOT = { has_country_flag = stop_name_traits }
-		}
+		NOT = { has_country_flag = stop_name_traits }
+		is_ai = no
 	}
 	
 	immediate = {
-		if = {
-			leader_event = {id = rename_[[Namespace]].110}
+		every_pool_leader = { 
+			leader_event = { id = rename_[[Namespace]].110 }
+		}
+		every_owned_leader = { 
+			leader_event = { id = rename_[[Namespace]].110 }
+		}
+		every_envoy = { 
+			leader_event = { id = rename_[[Namespace]].110 }
 		}
 	}
 }
@@ -330,3 +335,19 @@ country_event = {
 [[LeaderSelectorCampOptions]]
 
 [[LeaderSelectorLeaderOptions]]
+
+# From = Species ( Post Modification )
+country_event = {
+	id = rename_[[Namespace]].500
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		is_ai = no
+	}
+	immediate = {
+		log = "rename_[[Namespace]].500"
+		from = {
+			change_species_characteristics = { portrait = "[[Namespace]]_portraits" }
+		}
+	}
+}

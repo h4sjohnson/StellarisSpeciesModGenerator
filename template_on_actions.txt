@@ -24,3 +24,10 @@ on_leader_assigned = {
 		rename_[[Namespace]].113
 	}
 }
+
+on_modification_complete = {
+	events = {
+		rename_[[Namespace]].500
+		rename_[[Namespace]].100
+	}
+}

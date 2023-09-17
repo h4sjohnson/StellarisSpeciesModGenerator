@@ -2,15 +2,7 @@
 reset_portrait_[[Namespace]] = {
 	length = 0
 	effect = {
-		every_pool_leader = { 
-			leader_event = { id = rename_[[Namespace]].100 }
-		}
-		every_owned_leader = { 
-			leader_event = { id = rename_[[Namespace]].100 }
-		}
-		every_envoy = { 
-			leader_event = { id = rename_[[Namespace]].100 }
-		}
+		country_event = { id = rename_[[Namespace]].100 }
 	}
 }
 
@@ -19,7 +11,7 @@ reset_leader_[[Namespace]] = {
 	length = 0
 	effect = {
 		every_pool_leader = { 
-			leader_event = { id = rename_[[Namespace]].100 }
+			leader_event = { id = rename_[[Namespace]].110 }
 		}
 		every_owned_leader = { 
 			leader_event = { id = rename_[[Namespace]].101 }
