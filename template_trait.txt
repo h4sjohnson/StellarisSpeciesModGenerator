@@ -6,8 +6,6 @@
 	}
 	randomized = no
 	potential_crossbreeding_chance = 0
-	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
-	potential_crossbreeding_chance = 0
-	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE }
+	allowed_archetypes = { BIOLOGICAL LITHOID MACHINE ROBOT }
 	icon = "gfx/interface/icons/traits/[[trait_name]].dds"
 }
