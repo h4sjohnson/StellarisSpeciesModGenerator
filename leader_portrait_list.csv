@@ -2,21 +2,26 @@
 azurlane,,K_Eagle082,,碧蓝航线,
 特质名称,领袖ID,立绘名称,立绘路径,simp_chinese,
 trait_dragon_portraits,,,,东煌阵容立绘,
-,DE001,K_Dragon001,gfx/models/portraits/Dragon_Empery/DE001.dds,逸仙,
-,DE002,K_Dragon002,gfx/models/portraits/Dragon_Empery/DE002.dds,宁海,
-,DE003,K_Dragon003,gfx/models/portraits/Dragon_Empery/DE003.dds,平海,
-,DE004,K_Dragon004,gfx/models/portraits/Dragon_Empery/DE004.dds,鞍山,
-,DE005,K_Dragon005,gfx/models/portraits/Dragon_Empery/DE005.dds,抚顺,
-,DE006,K_Dragon006,gfx/models/portraits/Dragon_Empery/DE006.dds,太原,
-,DE007,K_Dragon007,gfx/models/portraits/Dragon_Empery/DE007.dds,长春,
-,DE008,K_Dragon008,gfx/models/portraits/Dragon_Empery/DE008.dds,应瑞,
-,DE009,K_Dragon009,gfx/models/portraits/Dragon_Empery/DE009.dds,肇和,
-,DE010,K_Dragon010,gfx/models/portraits/Dragon_Empery/DE010.dds,镇海,
-,DE011,K_Dragon011,gfx/models/portraits/Dragon_Empery/DE011.dds,海天,
-,DE012,K_Dragon012,gfx/models/portraits/Dragon_Empery/DE012.dds,海圻,
-,DE013,K_Dragon013,gfx/models/portraits/Dragon_Empery/DE013.dds,哈尔滨,
-,DE014,K_Dragon014,gfx/models/portraits/Dragon_Empery/DE014.dds,定安,
-,DE015,K_Dragon015,gfx/models/portraits/Dragon_Empery/DE015.dds,华甲,
+,DE001,K_Dragon001,gfx/models/portraits/Dragon_Empery/DE001.dds,逸仙,Yat Sen
+,DE002,K_Dragon002,gfx/models/portraits/Dragon_Empery/DE002.dds,宁海,Ning Hai
+,DE003,K_Dragon003,gfx/models/portraits/Dragon_Empery/DE003.dds,平海,Ping Hai
+,DE004,K_Dragon004,gfx/models/portraits/Dragon_Empery/DE004.dds,鞍山,An Shan
+,DE005,K_Dragon005,gfx/models/portraits/Dragon_Empery/DE005.dds,抚顺,Fu Shun
+,DE006,K_Dragon006,gfx/models/portraits/Dragon_Empery/DE006.dds,太原,Tai Yuan
+,DE007,K_Dragon007,gfx/models/portraits/Dragon_Empery/DE007.dds,长春,Chang Chun
+,DE008,K_Dragon008,gfx/models/portraits/Dragon_Empery/DE008.dds,应瑞,Ying Swei
+,DE009,K_Dragon009,gfx/models/portraits/Dragon_Empery/DE009.dds,肇和,Chao Ho
+,DE010,K_Dragon010,gfx/models/portraits/Dragon_Empery/DE010.dds,镇海,Chen Hai
+,DE011,K_Dragon011,gfx/models/portraits/Dragon_Empery/DE011.dds,海天,Hai Tien
+,DE012,K_Dragon012,gfx/models/portraits/Dragon_Empery/DE012.dds,海圻,Hai Chi
+,DE013,K_Dragon013,gfx/models/portraits/Dragon_Empery/DE013.dds,哈尔滨,Harbin
+,DE014,K_Dragon014,gfx/models/portraits/Dragon_Empery/DE014.dds,定安,Ting An
+,DE015,K_Dragon015,gfx/models/portraits/Dragon_Empery/DE015.dds,华甲,Hwah Jah
+,DE016,K_Dragon016,gfx/models/portraits/Dragon_Empery/DE016.dds,寰昌,Huan Chan
+,DE017,K_Dragon017,gfx/models/portraits/Dragon_Empery/DE017.dds,济安,Ji An
+,DE018,K_Dragon018,gfx/models/portraits/Dragon_Empery/DE018.dds,虎贲,Hu Pen
+,DE019,K_Dragon019,gfx/models/portraits/Dragon_Empery/DE019.dds,龙武,Lung Wu
+,DE020,K_Dragon020,gfx/models/portraits/Dragon_Empery/DE020.dds,飞云,Fei Yuen
 trait_eagle_portraits,,,,白鹰阵容立绘,
 ,EU001,K_Eagle001,gfx/models/portraits/Eagle_Union/EU001.dds,企业,Enterprise
 ,EU002,K_Eagle002,gfx/models/portraits/Eagle_Union/EU002.dds,埃塞克斯,Essex
@@ -103,7 +108,7 @@ trait_eagle_portraits,,,,白鹰阵容立绘,
 ,EU083,K_Eagle083,gfx/models/portraits/Eagle_Union/EU083.dds,尼古拉斯,
 ,EU084,K_Eagle084,gfx/models/portraits/Eagle_Union/EU084.dds,孟菲斯,
 ,EU085,K_Eagle085,gfx/models/portraits/Eagle_Union/EU085.dds,马萨诸塞,Massachusetts
-,EU086,K_Eagle086,gfx/models/portraits/Eagle_Union/EU086.dds,拉菲,
+,EU129,K_Eagle086,gfx/models/portraits/Eagle_Union/EU086.dds,拉菲,Laffey
 ,EU087,K_Eagle087,gfx/models/portraits/Eagle_Union/EU087.dds,昆西,
 ,EU088,K_Eagle088,gfx/models/portraits/Eagle_Union/EU088.dds,科罗拉多,
 ,EU089,K_Eagle089,gfx/models/portraits/Eagle_Union/EU089.dds,科尔克,
@@ -141,6 +146,11 @@ trait_eagle_portraits,,,,白鹰阵容立绘,
 ,EU121,K_Eagle121,gfx/models/portraits/Eagle_Union/EU121.dds,新奥尔良,
 ,EU122,K_Eagle122,gfx/models/portraits/Eagle_Union/EU122.dds,布里斯托尔,
 ,EU128,K_Eagle128,gfx/models/portraits/Eagle_Union/EU128.dds,奇尔沙治,Kearsarge
+,EU130,K_Eagle130,gfx/models/portraits/Eagle_Union/EU130.dds,关岛,Guam
+,EU131,K_Eagle131,gfx/models/portraits/Eagle_Union/EU131.dds,星座,Constellation
+,EU132,K_Eagle132,gfx/models/portraits/Eagle_Union/EU132.dds,圣哈辛托,San Jacinto
+,EU133,K_Eagle133,gfx/models/portraits/Eagle_Union/EU133.dds,路易斯维尔,Louisville
+,EU134,K_Eagle134,gfx/models/portraits/Eagle_Union/EU134.dds,松鲷,Flasher
 trait_Iris_portraits,,,,自由鸢尾立绘,
 ,IL001,K_Iris001,gfx/models/portraits/Iris_Libre/IL001.dds,黎塞留,Richelieu
 ,IL002,K_Iris002,gfx/models/portraits/Iris_Libre/IL002.dds,贝亚恩,Béarn
@@ -160,76 +170,81 @@ trait_Iris_portraits,,,,自由鸢尾立绘,
 ,IL016,K_Iris016,gfx/models/portraits/Iris_Libre/IL016.dds,吉尚,
 ,IL017,K_Iris017,gfx/models/portraits/Iris_Libre/IL017.dds,里昂,
 ,IL018,K_Iris018,gfx/models/portraits/Iris_Libre/IL018.dds,絮弗伦,
+,IL019,K_Iris019,gfx/models/portraits/Iris_Libre/IL019.dds,阿尔萨斯,Alsace
+,IL020,K_Iris020,gfx/models/portraits/Iris_Libre/IL020.dds,布伦努斯,Brennus
 trait_ironblood_portraits,,,,铁血阵营立绘,
-,Iron001,K_Iron001,gfx/models/portraits/Iron_Blood/IB001.dds,腓特烈大帝,
-,Iron002,K_Iron002,gfx/models/portraits/Iron_Blood/IB002.dds,俾斯麦,
-,Iron003,K_Iron003,gfx/models/portraits/Iron_Blood/IB003.dds,提尔比茨,
-,Iron004,K_Iron004,gfx/models/portraits/Iron_Blood/IB004.dds,奥丁,
-,Iron005,K_Iron005,gfx/models/portraits/Iron_Blood/IB005.dds,格奈森瑙,
-,Iron006,K_Iron006,gfx/models/portraits/Iron_Blood/IB006.dds,沙恩霍斯特,
-,Iron007,K_Iron007,gfx/models/portraits/Iron_Blood/IB007.dds,齐柏林伯爵,
-,Iron008,K_Iron008,gfx/models/portraits/Iron_Blood/IB008.dds,德意志,
-,Iron009,K_Iron009,gfx/models/portraits/Iron_Blood/IB009.dds,斯佩伯爵海军上将,
-,Iron010,K_Iron010,gfx/models/portraits/Iron_Blood/IB010.dds,欧根亲王,
-,Iron011,K_Iron011,gfx/models/portraits/Iron_Blood/IB011.dds,希佩尔海军上将,
-,Iron012,K_Iron012,gfx/models/portraits/Iron_Blood/IB012.dds,罗恩,
-,Iron013,K_Iron013,gfx/models/portraits/Iron_Blood/IB013.dds,美因茨,
-,Iron014,K_Iron014,gfx/models/portraits/Iron_Blood/IB014.dds,莱比锡,
-,Iron015,K_Iron015,gfx/models/portraits/Iron_Blood/IB015.dds,科隆,
-,Iron016,K_Iron016,gfx/models/portraits/Iron_Blood/IB016.dds,柯尼斯堡,
-,Iron017,K_Iron017,gfx/models/portraits/Iron_Blood/IB017.dds,卡尔斯鲁厄,
-,Iron018,K_Iron018,gfx/models/portraits/Iron_Blood/IB018.dds,U-96,
-,Iron019,K_Iron019,gfx/models/portraits/Iron_Blood/IB019.dds,Z19,
-,Iron020,K_Iron020,gfx/models/portraits/Iron_Blood/IB020.dds,Z20,
-,Iron021,K_Iron021,gfx/models/portraits/Iron_Blood/IB021.dds,Z21,
-,Iron022,K_Iron022,gfx/models/portraits/Iron_Blood/IB022.dds,Z46,
-,Iron023,K_Iron023,gfx/models/portraits/Iron_Blood/IB023.dds,U-73,
-,Iron024,K_Iron024,gfx/models/portraits/Iron_Blood/IB024.dds,U-101,
-,Iron025,K_Iron025,gfx/models/portraits/Iron_Blood/IB025.dds,Z1,
-,Iron026,K_Iron026,gfx/models/portraits/Iron_Blood/IB026.dds,Z26,
-,Iron027,K_Iron027,gfx/models/portraits/Iron_Blood/IB027.dds,Z36,
-,Iron028,K_Iron028,gfx/models/portraits/Iron_Blood/IB028.dds,U-47,
-,Iron029,K_Iron029,gfx/models/portraits/Iron_Blood/IB029.dds,U-81,
-,Iron030,K_Iron030,gfx/models/portraits/Iron_Blood/IB030.dds,U-557,
-,Iron031,K_Iron031,gfx/models/portraits/Iron_Blood/IB031.dds,Z18,
-,Iron032,K_Iron032,gfx/models/portraits/Iron_Blood/IB032.dds,Z23,
-,Iron033,K_Iron033,gfx/models/portraits/Iron_Blood/IB033.dds,Z25,
-,Iron034,K_Iron034,gfx/models/portraits/Iron_Blood/IB034.dds,Z35,
-,Iron035,K_Iron035,gfx/models/portraits/Iron_Blood/IB035.dds,U-110,
-,Iron036,K_Iron036,gfx/models/portraits/Iron_Blood/IB036.dds,U-552,
-,Iron037,K_Iron037,gfx/models/portraits/Iron_Blood/IB037.dds,U-556,
-,Iron038,K_Iron038,gfx/models/portraits/Iron_Blood/IB038.dds,Z2,
-,Iron039,K_Iron039,gfx/models/portraits/Iron_Blood/IB039.dds,海因里希亲王,
-,Iron040,K_Iron040,gfx/models/portraits/Iron_Blood/IB040.dds,彼得·史特拉塞,
-,Iron041,K_Iron041,gfx/models/portraits/Iron_Blood/IB041.dds,威悉,
-,Iron042,K_Iron042,gfx/models/portraits/Iron_Blood/IB042.dds,纽伦堡,
-,Iron043,K_Iron043,gfx/models/portraits/Iron_Blood/IB043.dds,Z24,
-,Iron044,K_Iron044,gfx/models/portraits/Iron_Blood/IB044.dds,Z28,
-,Iron045,K_Iron045,gfx/models/portraits/Iron_Blood/IB045.dds,U-37,
-,Iron046,K_Iron046,gfx/models/portraits/Iron_Blood/IB046.dds,U-410,
-,Iron047,K_Iron047,gfx/models/portraits/Iron_Blood/IB047.dds,奥古斯特·冯·帕塞瓦尔,
-,Iron048,K_Iron048,gfx/models/portraits/Iron_Blood/IB048.dds,埃吉尔,
-,Iron049,K_Iron049,gfx/models/portraits/Iron_Blood/IB049.dds,U-1206,
-,Iron050,K_Iron050,gfx/models/portraits/Iron_Blood/IB050.dds,阿达尔伯特亲王,
-,Iron051,K_Iron051,gfx/models/portraits/Iron_Blood/IB051.dds,马格德堡,
-,Iron052,K_Iron052,gfx/models/portraits/Iron_Blood/IB052.dds,易北,
-,Iron053,K_Iron053,gfx/models/portraits/Iron_Blood/IB053.dds,乌尔里希·冯·胡滕,
-,Iron054,K_Iron054,gfx/models/portraits/Iron_Blood/IB054.dds,埃姆登,
-,Iron055,K_Iron055,gfx/models/portraits/Iron_Blood/IB055.dds,约克,
-,Iron056,K_Iron056,gfx/models/portraits/Iron_Blood/IB056.dds,吕佐夫,
-,Iron057,K_Iron057,gfx/models/portraits/Iron_Blood/IB057.dds,塞德利茨,
-,Iron058,K_Iron058,gfx/models/portraits/Iron_Blood/IB058.dds,图林根,
-,Iron059,K_Iron059,gfx/models/portraits/Iron_Blood/IB059.dds,埃尔宾,
-,Iron060,K_Iron060,gfx/models/portraits/Iron_Blood/IB060.dds,鲁普雷希特亲王,
-,Iron061,K_Iron061,gfx/models/portraits/Iron_Blood/IB061.dds,Z16,
-,Iron062,K_Iron062,gfx/models/portraits/Iron_Blood/IB062.dds,布吕歇尔,
-,Iron063,K_Iron063,gfx/models/portraits/Iron_Blood/IB063.dds,布伦希尔德,
-,Iron064,K_Iron064,gfx/models/portraits/Iron_Blood/IB064.dds,雷根斯堡,
-,Iron065,K_Iron065,gfx/models/portraits/Iron_Blood/IB065.dds,亚德,
-,Iron066,K_Iron066,gfx/models/portraits/Iron_Blood/IB066.dds,奥托·冯·阿尔文斯莱本,
-,Iron067,K_Iron067,gfx/models/portraits/Iron_Blood/IB067.dds,俾斯麦II,
-,Iron068,K_Iron068,gfx/models/portraits/Iron_Blood/IB068.dds,兴登堡,
-,Iron069,K_Iron069,gfx/models/portraits/Iron_Blood/IB069.dds,菲利克斯·舒尔茨,
+,Iron001,K_Iron001,gfx/models/portraits/Iron_Blood/IB001.dds,腓特烈大帝,Friedrich der Große
+,Iron002,K_Iron002,gfx/models/portraits/Iron_Blood/IB002.dds,俾斯麦,Bismarck
+,Iron003,K_Iron003,gfx/models/portraits/Iron_Blood/IB003.dds,提尔比茨,Tirpitz
+,Iron004,K_Iron004,gfx/models/portraits/Iron_Blood/IB004.dds,奥丁,Odin
+,Iron005,K_Iron005,gfx/models/portraits/Iron_Blood/IB005.dds,格奈森瑙,Gneisenau
+,Iron006,K_Iron006,gfx/models/portraits/Iron_Blood/IB006.dds,沙恩霍斯特,Scharnhorst
+,Iron007,K_Iron007,gfx/models/portraits/Iron_Blood/IB007.dds,齐柏林伯爵,Graf Zeppelin
+,Iron008,K_Iron008,gfx/models/portraits/Iron_Blood/IB008.dds,德意志,Deutschland
+,Iron009,K_Iron009,gfx/models/portraits/Iron_Blood/IB009.dds,斯佩伯爵海军上将,Admiral Graf Spee
+,Iron010,K_Iron010,gfx/models/portraits/Iron_Blood/IB010.dds,欧根亲王,Prinz Eugen
+,Iron011,K_Iron011,gfx/models/portraits/Iron_Blood/IB011.dds,希佩尔海军上将,Admiral Hipper
+,Iron012,K_Iron012,gfx/models/portraits/Iron_Blood/IB012.dds,罗恩,Roon
+,Iron013,K_Iron013,gfx/models/portraits/Iron_Blood/IB013.dds,美因茨,Mainz
+,Iron014,K_Iron014,gfx/models/portraits/Iron_Blood/IB014.dds,莱比锡,Leipzig
+,Iron015,K_Iron015,gfx/models/portraits/Iron_Blood/IB015.dds,科隆,Köln
+,Iron016,K_Iron016,gfx/models/portraits/Iron_Blood/IB016.dds,柯尼斯堡,Königsberg
+,Iron017,K_Iron017,gfx/models/portraits/Iron_Blood/IB017.dds,卡尔斯鲁厄,Karlsruhe
+,Iron018,K_Iron018,gfx/models/portraits/Iron_Blood/IB018.dds,U-96,U-96
+,Iron019,K_Iron019,gfx/models/portraits/Iron_Blood/IB019.dds,Z19,Z19
+,Iron020,K_Iron020,gfx/models/portraits/Iron_Blood/IB020.dds,Z20,Z20
+,Iron021,K_Iron021,gfx/models/portraits/Iron_Blood/IB021.dds,Z21,Z21
+,Iron022,K_Iron022,gfx/models/portraits/Iron_Blood/IB022.dds,Z46,Z46
+,Iron023,K_Iron023,gfx/models/portraits/Iron_Blood/IB023.dds,U-73,U-73
+,Iron024,K_Iron024,gfx/models/portraits/Iron_Blood/IB024.dds,U-101,U-101
+,Iron025,K_Iron025,gfx/models/portraits/Iron_Blood/IB025.dds,Z1,Z1
+,Iron026,K_Iron026,gfx/models/portraits/Iron_Blood/IB026.dds,Z26,Z26
+,Iron027,K_Iron027,gfx/models/portraits/Iron_Blood/IB027.dds,Z36,Z36
+,Iron028,K_Iron028,gfx/models/portraits/Iron_Blood/IB028.dds,U-47,U-47
+,Iron029,K_Iron029,gfx/models/portraits/Iron_Blood/IB029.dds,U-81,U-81
+,Iron030,K_Iron030,gfx/models/portraits/Iron_Blood/IB030.dds,U-557,U-557
+,Iron031,K_Iron031,gfx/models/portraits/Iron_Blood/IB031.dds,Z18,Z18
+,Iron032,K_Iron032,gfx/models/portraits/Iron_Blood/IB032.dds,Z23,Z23
+,Iron033,K_Iron033,gfx/models/portraits/Iron_Blood/IB033.dds,Z25,Z25
+,Iron034,K_Iron034,gfx/models/portraits/Iron_Blood/IB034.dds,Z35,Z35
+,Iron035,K_Iron035,gfx/models/portraits/Iron_Blood/IB035.dds,U-110,U-110
+,Iron036,K_Iron036,gfx/models/portraits/Iron_Blood/IB036.dds,U-552,U-552
+,Iron037,K_Iron037,gfx/models/portraits/Iron_Blood/IB037.dds,U-556,U-556
+,Iron038,K_Iron038,gfx/models/portraits/Iron_Blood/IB038.dds,Z2,Z2
+,Iron039,K_Iron039,gfx/models/portraits/Iron_Blood/IB039.dds,海因里希亲王,Prinz Heinrich
+,Iron040,K_Iron040,gfx/models/portraits/Iron_Blood/IB040.dds,彼得·史特拉塞,Peter Strasser
+,Iron041,K_Iron041,gfx/models/portraits/Iron_Blood/IB041.dds,威悉,Weser
+,Iron042,K_Iron042,gfx/models/portraits/Iron_Blood/IB042.dds,纽伦堡,Nürnberg
+,Iron043,K_Iron043,gfx/models/portraits/Iron_Blood/IB043.dds,Z24,Z24
+,Iron044,K_Iron044,gfx/models/portraits/Iron_Blood/IB044.dds,Z28,Z28
+,Iron045,K_Iron045,gfx/models/portraits/Iron_Blood/IB045.dds,U-37,U-37
+,Iron046,K_Iron046,gfx/models/portraits/Iron_Blood/IB046.dds,U-410,U-410
+,Iron047,K_Iron047,gfx/models/portraits/Iron_Blood/IB047.dds,奥古斯特·冯·帕塞瓦尔,August von Parseval
+,Iron048,K_Iron048,gfx/models/portraits/Iron_Blood/IB048.dds,埃吉尔,Ägir
+,Iron049,K_Iron049,gfx/models/portraits/Iron_Blood/IB049.dds,U-1206,U-1206
+,Iron050,K_Iron050,gfx/models/portraits/Iron_Blood/IB050.dds,阿达尔伯特亲王,Prinz Adalbert
+,Iron051,K_Iron051,gfx/models/portraits/Iron_Blood/IB051.dds,马格德堡,Magdeburg
+,Iron052,K_Iron052,gfx/models/portraits/Iron_Blood/IB052.dds,易北,Elbe
+,Iron053,K_Iron053,gfx/models/portraits/Iron_Blood/IB053.dds,乌尔里希·冯·胡滕,Ulrich von Hutten
+,Iron054,K_Iron054,gfx/models/portraits/Iron_Blood/IB054.dds,埃姆登,Emden
+,Iron055,K_Iron055,gfx/models/portraits/Iron_Blood/IB055.dds,约克,Yorck
+,Iron056,K_Iron056,gfx/models/portraits/Iron_Blood/IB056.dds,吕佐夫,Lützow
+,Iron057,K_Iron057,gfx/models/portraits/Iron_Blood/IB057.dds,塞德利茨,Seydlitz
+,Iron058,K_Iron058,gfx/models/portraits/Iron_Blood/IB058.dds,图林根,Thüringen
+,Iron059,K_Iron059,gfx/models/portraits/Iron_Blood/IB059.dds,埃尔宾,Elbing
+,Iron060,K_Iron060,gfx/models/portraits/Iron_Blood/IB060.dds,鲁普雷希特亲王,Prinz Rupprecht
+,Iron061,K_Iron061,gfx/models/portraits/Iron_Blood/IB061.dds,Z16,Z16
+,Iron062,K_Iron062,gfx/models/portraits/Iron_Blood/IB062.dds,布吕歇尔,Blücher
+,Iron063,K_Iron063,gfx/models/portraits/Iron_Blood/IB063.dds,布伦希尔德,Brünhilde
+,Iron064,K_Iron064,gfx/models/portraits/Iron_Blood/IB064.dds,雷根斯堡,Regensburg
+,Iron065,K_Iron065,gfx/models/portraits/Iron_Blood/IB065.dds,亚德,Jade
+,Iron066,K_Iron066,gfx/models/portraits/Iron_Blood/IB066.dds,奥托·冯·阿尔文斯莱本,Otto von Alvensleben
+,Iron068,K_Iron068,gfx/models/portraits/Iron_Blood/IB068.dds,兴登堡,Hindenburg
+,Iron069,K_Iron069,gfx/models/portraits/Iron_Blood/IB069.dds,菲利克斯·舒尔茨,Felix Schultz
+,Iron070,K_Iron070,gfx/models/portraits/Iron_Blood/IB070.dds,亚尔薇特,Alvitr
+,Iron071,K_Iron071,gfx/models/portraits/Iron_Blood/IB071.dds,U-31,U-31
+,Iron072,K_Iron072,gfx/models/portraits/Iron_Blood/IB072.dds,Z47,Z47
+,Iron073,K_Iron073,gfx/models/portraits/Iron_Blood/IB073.dds,Z43,Z43
 trait_northern_portraits,,,,北方联合立绘,
 ,NP001,K_NP001,gfx/models/portraits/Northern_Parliament/NP001.dds,苏维埃罗西亚,
 ,NP002,K_NP002,gfx/models/portraits/Northern_Parliament/NP002.dds,甘古特,
@@ -257,6 +272,10 @@ trait_northern_portraits,,,,北方联合立绘,
 ,NP024,K_NP024,gfx/models/portraits/Northern_Parliament/NP024.dds,库尔斯克,
 ,NP025,K_NP025,gfx/models/portraits/Northern_Parliament/NP025.dds,伏罗希洛夫,
 ,NP026,K_NP026,gfx/models/portraits/Northern_Parliament/NP026.dds,塞瓦斯托波尔,
+,NP027,K_NP027,gfx/models/portraits/Northern_Parliament/NP027.dds,苏维埃同盟,Sovetsky Soyuz
+,NP028,K_NP028,gfx/models/portraits/Northern_Parliament/NP028.dds,波尔塔瓦,Poltava
+,NP029,K_NP029,gfx/models/portraits/Northern_Parliament/NP029.dds,火力,Ognevoy
+,NP030,K_NP030,gfx/models/portraits/Northern_Parliament/NP030.dds,凶猛,Svirepy
 trait_sardinian_portraits,,,,萨丁帝国立绘,
 ,SE001,K_Sardinian001,gfx/models/portraits/Sardinian_Empire/SE001.dds,利托里奥,
 ,SE002,K_Sardinian002,gfx/models/portraits/Sardinian_Empire/SE002.dds,扎拉,
@@ -302,6 +321,9 @@ trait_vichya_portraits,,,,维希教廷立绘,
 ,VD014,K_Vichya014,gfx/models/portraits/Vichya_Dominion/VD014.dds,马赛曲,Marseillaise
 ,VD015,K_Vichya015,gfx/models/portraits/Vichya_Dominion/VD015.dds,凯尔圣,Kersaint
 ,VD016,K_Vichya016,gfx/models/portraits/Vichya_Dominion/VD016.dds,克莱蒙梭,Clemenceau
+,VD017,K_Vichya017,gfx/models/portraits/Vichya_Dominion/VD017.dds,莫加多尔,Mogador
+,VD018,K_Vichya018,gfx/models/portraits/Vichya_Dominion/VD018.dds,花剑,Fleuret
+,VD019,K_Vichya019,gfx/models/portraits/Vichya_Dominion/VD019.dds,重剑,Épée
 trait_royal_portraits,,,,皇家阵容立绘,
 ,RN001,K_Royal001,gfx/models/portraits/Royal_Navy/RN001.dds,厌战,
 ,RN002,K_Royal002,gfx/models/portraits/Royal_Navy/RN002.dds,伊丽莎白女王,
@@ -548,3 +570,11 @@ trait_sakura_portraits,,,,重樱阵容立绘,
 ,SA138,K_Sakura138,gfx/models/portraits/Sakura_Empire/SA138.dds,尾张,Owari
 ,SA139,K_Sakura139,gfx/models/portraits/Sakura_Empire/SA139.dds,云仙,Unzen
 ,SA140,K_Sakura140,gfx/models/portraits/Sakura_Empire/SA140.dds,朝凪,Asanagi
+trait_senran_kagura_portraits,,,,闪乱神乐立绘,
+,SK001,K_Kagura001,gfx/models/portraits/Senran_kagura/SK001.dds,飞鸟,Asuka
+,SK002,K_Kagura002,gfx/models/portraits/Senran_kagura/SK002.dds,斑鸠,Ikaruga
+,SK003,K_Kagura003,gfx/models/portraits/Senran_kagura/SK003.dds,夕烧,Yuuyaki
+,SK004,K_Kagura004,gfx/models/portraits/Senran_kagura/SK004.dds,雪不归 ,Fubuki
+,SK005,K_Kagura005,gfx/models/portraits/Senran_kagura/SK005.dds,雪泉 ,Yumi
+,SK006,K_Kagura006,gfx/models/portraits/Senran_kagura/SK006.dds,焰 ,Homura
+,SK007,K_Kagura007,gfx/models/portraits/Senran_kagura/SK007.dds,紫 ,Murasaki
