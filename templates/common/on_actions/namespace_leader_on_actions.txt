@@ -1,0 +1,17 @@
+on_game_start_country = {
+	events = {
+		rename_[[Namespace]].203
+	}
+}
+
+on_leader_spawned = {
+	events = {
+		rename_[[Namespace]].101
+	}
+}
+
+on_modification_complete = {
+	events = {
+		rename_[[Namespace]].204
+	}
+}

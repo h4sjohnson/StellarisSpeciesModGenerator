@@ -4,7 +4,7 @@
 	{
 		public static void Generate()
 		{
-			string[] lines = File.ReadAllLines("template_on_actions.txt");
+			string[] lines = File.ReadAllLines(@"templates\common\on_actions\namespace_leader_on_actions.txt");
 
 			for (int i = 0; i < lines.Length; i++)
 			{

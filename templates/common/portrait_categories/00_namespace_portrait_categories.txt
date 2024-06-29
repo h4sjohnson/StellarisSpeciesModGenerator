@@ -1,0 +1,7 @@
+[[Namespace]] = {
+	name = [[Namespace]]
+
+	sets = {
+		[[Namespace]]_portrait_set
+	}
+}

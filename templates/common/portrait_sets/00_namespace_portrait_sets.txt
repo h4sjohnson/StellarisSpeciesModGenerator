@@ -1,0 +1,7 @@
+[[Namespace]]_portrait_set = {
+	species_class = [[Namespace]]_species
+	
+	portraits = {
+		[[Namespace]]_portraits
+	}
+}

@@ -5,7 +5,7 @@
 		public static void Generate()
 		{
 			string strTraitNamePattern = "[[trait_name]]";
-			string[] lines = File.ReadAllLines("template_trait.txt");
+			string[] lines = File.ReadAllLines(@"templates\common\traits\0_namespace_portraits_traits.txt");
 			List<string> outLines = new();
 			string templateString = string.Join('\n', lines);
 			for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
