@@ -1,19 +1,11 @@
 [[Namespace]]_species = {
 	archetype = BIOLOGICAL
-#	randomized = no
-	gender = female
+	randomized = no
 
 	portrait_modding = yes
 
 	leader_age_min = 15
 	leader_age_max = 25
-
-	portraits = {
-		"[[Namespace]]_portraits"
-	}
-	non_randomized_portraits = {
-		"[[Namespace]]_portraits"
-	}
 
 	possible = {
 		authority = {

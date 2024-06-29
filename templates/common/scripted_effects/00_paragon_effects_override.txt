@@ -1,0 +1,3 @@
+set_gestalt_node_protrait_effect = {
+	log = "set_gestalt_node_protrait_effect override"
+}

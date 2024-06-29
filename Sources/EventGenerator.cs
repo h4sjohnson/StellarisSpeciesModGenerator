@@ -4,7 +4,7 @@
 	{
 		public static void Generate()
 		{
-			string[] lines = File.ReadAllLines("template_events.txt");
+			string[] lines = File.ReadAllLines(@"templates\events\0_namespace_leader_events.txt");
 
 			for (int l = 0; l < lines.Length; l++)
 			{
@@ -13,14 +13,13 @@
 				{
 					lines[l] = line.Replace("[[Namespace]]", ModWorkload.modNamespace);
 				}
-				if (line.Contains("[[Block1]]"))
+				if (line.Contains("[[SetNameFlag]]"))
 				{
-					string spaces = line.Split("[[Block1]]")[0];
+					string spaces = line.Split("[[SetNameFlag]]")[0];
 					string strTemp = "";
 					strTemp += spaces + "if = {\n";
 					strTemp += spaces + "	limit = {\n";
-					strTemp += spaces + "		NOR = {\n";
-					strTemp += spaces + "			has_leader_flag = leader_portrait_changed\n";
+					strTemp += spaces + "		OR = {\n";
 					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
 					{
 						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
@@ -29,14 +28,13 @@
 					}
 					strTemp += spaces + "		}\n";
 					strTemp += spaces + "	}\n";
-					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
-					{
-						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
-						for (int i = 0; i < traitWorkload.leaderIDs.Count; i++)
-						{
-							strTemp += spaces + "	remove_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + "\n";
-						}
-					}
+					strTemp += spaces + "	set_leader_flag = has_leader_name_flag\n";
+					strTemp += spaces + "}\n";
+					strTemp += spaces + "else = {\n";
+					strTemp += spaces + "	remove_leader_flag = has_leader_name_flag\n";
+					strTemp += spaces + "}\n";
+					strTemp += spaces + "if = {\n";
+					strTemp += spaces + "	limit = { NOT = { has_leader_flag = has_leader_name_flag} }\n";
 					strTemp += spaces + "	random_list = {\n";
 					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
 					{
@@ -58,65 +56,37 @@
 							strTemp += spaces + "				}\n";
 							strTemp += spaces + "			}\n";
 							strTemp += spaces + "			set_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + "\n";
-							strTemp += spaces + "			set_leader_flag = leader_portrait_changed\n";
-							strTemp += spaces + "			set_leader_flag = leader_need_rename\n";
+							strTemp += spaces + "			set_leader_flag = has_leader_name_flag\n";
 							strTemp += spaces + "		}\n";
 						}
 					}
 					strTemp += spaces + "	}\n";
 					strTemp += spaces + "	if = { \n";
-					strTemp += spaces + "		limit = { NOT = { has_leader_flag = leader_portrait_changed} }\n";
+					strTemp += spaces + "		limit = { NOT = { has_leader_flag = has_leader_name_flag} }\n";
 					strTemp += spaces + "		log = \"[This.GetName]: Reroll character failed. No leader name available\"\n";
 					strTemp += spaces + "	}\n";
 					strTemp += spaces + "}\n";
 					lines[l] = strTemp;
 				}
-				if (line.Contains("[[Block2]]"))
+				if (line.Contains("[[ClearAllNameFlags]]"))
 				{
-					string spaces = line.Split("[[Block2]]")[0];
+					string spaces = line.Split("[[ClearAllNameFlags]]")[0];
 					string strTemp = "";
+					strTemp += spaces + "remove_leader_flag = has_leader_name_flag\n";
 					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
 					{
 						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
-						strTemp += spaces + "if = {\n";
-						strTemp += spaces + "	limit = {\n";
-						strTemp += spaces + "		species = {\n";
-						strTemp += spaces + "			has_trait = " + traitWorkload.traitName + "\n";
-						strTemp += spaces + "		}\n";
-						strTemp += spaces + "	}\n";
 						for (int i = 0; i < traitWorkload.leaderIDs.Count; i++)
 						{
-							if (i == 0)
-								strTemp += spaces + "	if = { \n";
-							else
-								strTemp += spaces + "	else_if = { \n";
-							strTemp += spaces + "		limit = { has_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + " }\n";
-							strTemp += spaces + "		remove_leader_flag = leader_need_rename\n";
-							strTemp += spaces + "		set_leader_flag = leader_renamed\n";
-							strTemp += spaces + "		save_event_target_as = rename_leader\n";
-							strTemp += spaces + "		owner = {\n";
-							strTemp += spaces + "			log = \"Clone leader " + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
-							strTemp += spaces + "			clone_leader = {\n";
-							strTemp += spaces + "				target = event_target:rename_leader\n";
-							strTemp += spaces + "				name = leader_name_" + traitWorkload.leaderIDs[i] + "\n";
-							strTemp += spaces + "			}\n";
-							strTemp += spaces + "			last_created_leader = {" + "\n";
-							strTemp += spaces + "				set_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + "\n";
-							strTemp += spaces + "				change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
-							strTemp += spaces + "			}" + "\n";
-							strTemp += spaces + "			log = \"Clone leader succeed \"\n";
-							strTemp += spaces + "		}\n";
-							strTemp += spaces + "	}\n";
+							strTemp += spaces + "remove_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + "\n";
 						}
-						strTemp += spaces + "}\n";
 					}
-					lines[l] = line.Replace("[[Block2]]", strTemp);
+					lines[l] = strTemp;
 				}
-				if (line.Contains("[[Block3]]"))
+				if (line.Contains("[[ChangeNameAndPortrait]]"))
 				{
-					string spaces = line.Split("[[Block3]]")[0];
+					string spaces = line.Split("[[ChangeNameAndPortrait]]")[0];
 					string strTemp = "";
-					strTemp += spaces + "remove_leader_flag = change_portrait_success\n";
 					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
 					{
 						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
@@ -129,18 +99,11 @@
 							strTemp += spaces + "	limit = { has_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + " }\n";
 							strTemp += spaces + "	log = \"Change leader [This.GetName] portrait to " + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
 							strTemp += spaces + "	change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
-							strTemp += spaces + "	set_leader_flag = change_portrait_success\n";
+							strTemp += spaces + "	set_name = \"" + traitWorkload.leaderNameLocTexts[0][i] + "\"\n";
 							strTemp += spaces + "}\n";
 						}
 					}
-					// strTemp += spaces + "if = {\n";
-					// strTemp += spaces + "	limit = {\n";
-					// strTemp += spaces + "		NOT = { has_leader_flag = change_portrait_success }\n";
-					// strTemp += spaces + "	}\n";
-					// strTemp += spaces + "	log = \"Change portrait failed. Could not find portrait\"\n";
-					// strTemp += spaces + "}\n";
-					strTemp += spaces + "remove_leader_flag = change_portrait_success\n";
-					lines[l] = line.Replace("[[Block3]]", strTemp);
+					lines[l] = line.Replace("[[ChangeNameAndPortrait]]", strTemp);
 				}
 				if (line.Contains("[[LeaderSelectorCampOptions]]"))
 				{
@@ -154,10 +117,10 @@
 					strTemp += "	title = selector_title\n";
 					strTemp += "	desc = selector_desc\n";
 					strTemp += "	trigger = { always = yes }\n";
-
 					strTemp += "	option = {\n";
 					strTemp += "		name = selector_cancel\n";
 					strTemp += "		hidden_effect = {\n";
+					strTemp += $"			owner = {{ country_event = {{ id = rename_{ModWorkload.modNamespace}.205 }} }}\n";
 					strTemp += "			log = \"取消\"\n";
 					strTemp += "		}\n";
 					strTemp += "	}\n";
@@ -189,6 +152,7 @@
 							strTemp += "	is_triggered_only = yes\n";
 							strTemp += "	location = root\n";
 							strTemp += "	title = selector_title\n";
+							strTemp += "	picture = GFX_event_frame\n";
 							strTemp += "	desc = \"\"\n";
 							strTemp += "	trigger = { always = yes }\n";
 							strTemp += "	option = {\n";
@@ -224,8 +188,8 @@
 								strTemp += "		hidden_effect = {\n";
 								strTemp += "			change_leader_portrait = " + traitWorkload.leaderPortraitTokens[i] + "\n";
 								strTemp += "			set_leader_flag = leader_name_flag_" + traitWorkload.leaderIDs[i] + "\n";
-								strTemp += "			set_leader_flag = leader_portrait_changed\n";
-								strTemp += $"			owner = {{ country_event = {{ id = rename_{ModWorkload.modNamespace}.204 }} }}\n";
+								strTemp += "			set_leader_flag = has_leader_name_flag\n";
+								strTemp += $"			owner = {{ country_event = {{ id = rename_{ModWorkload.modNamespace}.205 }} }}\n";
 								strTemp += "		}\n";
 								strTemp += "	}\n";
 							}
@@ -245,11 +209,24 @@
 								strTemp += "		hidden_effect = {\n";
 								strTemp += $"			leader_event = {{ id = rename_{ModWorkload.modNamespace}.{40000 + TraitIdx * 100 + 0} }}\n";
 								strTemp += "		}\n";
-								strTemp += "	}\n";								
+								strTemp += "	}\n";
 							}
 							strTemp += "}\n";
 						}
 					}
+					lines[l] = strTemp;
+				}
+				if (line.Contains("[[HasAnyTrait]]"))
+				{
+					string spaces = line.Split("[[HasAnyTrait]]")[0];
+					string strTemp = "";
+					strTemp += spaces + "OR = { \n";
+					for (int TraitIdx = 0; TraitIdx < ModWorkload.traitWorkloads.Count; TraitIdx++)
+					{
+						var traitWorkload = ModWorkload.traitWorkloads[TraitIdx];
+						strTemp += spaces + "	has_trait = " + traitWorkload.traitName + "\n";
+					}
+					strTemp += spaces + "}\n";
 					lines[l] = strTemp;
 				}
 			}

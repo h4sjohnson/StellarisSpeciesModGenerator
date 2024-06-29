@@ -1,0 +1,15 @@
+# reset portrait & name
+reset_leader_[[Namespace]] = {
+	length = 0
+	effect = {
+		country_event = { id = rename_[[Namespace]].204 }
+	}
+}
+
+# reroll portrait & name
+reroll_leader_[[Namespace]] = {
+	length = 0
+	effect = {
+		country_event = { id = rename_[[Namespace]].205 }
+	}
+}

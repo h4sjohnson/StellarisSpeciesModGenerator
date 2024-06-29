@@ -4,7 +4,7 @@
 	{
 		public static void Generate()
 		{
-			string[] lines = File.ReadAllLines("template_edict.txt");
+			string[] lines = File.ReadAllLines(@"templates\common\edicts\1_namespace_rename_edict.txt");
 
 			for (int i = 0; i < lines.Length; i++)
 			{
