@@ -7,14 +7,32 @@ country_event = {
 	hide_window = yes
 	
 	trigger = {
-		is_gestalt_node = no
-		from = { is_ruler = no }
-		owner = { is_ai = no }
+		from = 
+		{
+			OR = {
+				is_ruler = no
+				is_heir = yes
+			}			
+		}
 	}
 	
 	immediate = {
 		from = {
-			leader_event = {id = rename_[[Namespace]].110}
+			# delay 1 day for heir, so the name set correctly
+			if = {
+				limit = {
+					is_heir = yes
+				}			
+				leader_event = {
+					id = rename_[[Namespace]].110
+					days = 1
+				}
+			}
+			else = {
+				leader_event = {
+					id = rename_[[Namespace]].110
+				}
+			}
 		}
 	}
 }
